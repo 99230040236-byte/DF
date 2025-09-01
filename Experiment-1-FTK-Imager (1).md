@@ -1,79 +1,88 @@
+# 🧪 Lab Exercise 1: Collecting Evidence with FTK Imager
 
-# Experiment-1: Evidence Acquisition Using FTK Imager
-
-**Course / Lab:** Digital Forensics Lab  
-**Experiment No.:** 1  
-**Title:** Evidence Acquisition Using FTK Imager  
-
----
-
-## Aim
-To capture RAM data and create a forensic disk image using FTK Imager.
+**Subject:** Digital Forensics Laboratory  
+**Experiment ID:** 01  
+**Topic:** Evidence Acquisition through FTK Imager  
 
 ---
 
-## Requirements
-- FTK Imager  
-- Windows operating system  
+### 🎯 Objective
+To acquire live (volatile) memory and create a forensic image of a storage device using FTK Imager.
 
 ---
 
-## Description
-- FTK Imager is a forensic acquisition tool used to create exact copies (disk images) of storage devices.  
-- It allows capturing RAM data, entire drives, or specific partitions without altering original evidence.  
-- Investigators use it to preview, preserve, and export data for further forensic analysis.  
+### 🛠️ Tools & Environment
+- **Software:** FTK Imager  
+- **Platform:** Windows OS  
 
 ---
 
-## Part A — Acquiring Volatile Memory (RAM) Using FTK Imager
-
-**Step-1:** Right click on the FTK Imager tool and select **Run as administrator**.  
-
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.55_983ae60c.jpg
-**Step-2:** On the top menu bar, click **File** and select **Capture Memory** from the drop-down list.  
-
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_3c886fdd.jpg
-**Step-3:** A dialog box will appear. Select the destination path to your file and provide the file name with `.mem` extension. (Pagefile and AD1 file options are optional.)  
-
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_6e410aaa.jpg
-**Step-4:** Click the **Capture Memory** button to start acquisition of memory.  
-
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_6ec5cadd.jpg
-**Step-5:** A progress bar in green colour will indicate the capture status. The time taken to capture RAM depends on the system’s RAM size. After completion, the captured memory file will be available in the chosen destination folder.  
-
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_87d83979.jpg
+### 📘 Overview
+FTK Imager is a widely used forensic utility that enables investigators to capture system memory and generate exact disk images.  
+- It helps preserve original data without modifications.  
+- Analysts can preview, save, and later examine the extracted content during investigations.  
 
 ---
 
-## Part B — Acquiring Non-Volatile Memory (Disk Image) Using FTK Imager
+## Part A — Capturing Volatile Memory (RAM)
 
-**Step-1:** On the top right menu bar, click **File** and select **Create Disk Image** from the drop-down menu.  
+**Step 1:** Launch FTK Imager with administrator rights.  
 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_3c886fdd.jpg
-**Step-2:** In the dialog box, choose the source evidence type like **Physical Drive, Logical Drive, Image File, or Contents of a folder**.  
+![Step 1](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.55_983ae60c.jpg?raw=true)
 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_61f840f9.jpg
-**Step-3:** Select the drive you want to image and click **Finish**.  
+**Step 2:** From the top menu, navigate to **File → Capture Memory**.  
 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_56ce71b2.jpg
-**Step-4:** In the **Create Image** dialog, click **Add** to define image type. 
+![Step 2](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_3c886fdd.jpg?raw=true)
 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.58_0a038f70.jpg
+**Step 3:** A window will pop up. Specify the storage location, choose a filename ending in `.mem`, and optionally include pagefile or AD1 output.  
 
-**Step-5:** Select the image type from the dialog box (Raw / SMART / E01 / AFF). Among all, **E01 is recommended**. 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_56ce71b2.jpg
-**Step-6:** Fill in the case information (Case Number, Evidence Number, Examiner Name, Unique Description, Notes) and click **Next**.  
+![Step 3](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_6e410aaa.jpg?raw=true)
 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.58_0a038f70.jpg
-**Step-7:** Choose the destination folder and give a file name for the image.  
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_a329330e.jpg
-**Step-8:** Set options like compression, splitting size, and click **Finish**. After that, click **Start** to begin the imaging process.  
+**Step 4:** Press **Capture Memory** to begin the process.  
 
-https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.58_ba2291db.jpg
+![Step 4](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_6ec5cadd.jpg?raw=true)
 
-FTK Imager will display progress along with hash values. The imaging process may take time depending on the drive size. After completion, FTK Imager verifies the hash values automatically to maintain forensic integrity. Finally, the hash values should match.  
+**Step 5:** A green progress bar will display the acquisition status. Duration depends on total RAM size. Once finished, the `.mem` file appears at the selected destination.  
+
+![Step 5](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_87d83979.jpg?raw=true)
 
 ---
 
-  
+## Part B — Imaging Non-Volatile Storage (Disk Acquisition)
 
+**Step 1:** Go to **File → Create Disk Image**.  
+
+![Step B1](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.56_3c886fdd.jpg?raw=true)
+
+**Step 2:** Select the evidence source type (e.g., Physical Drive, Logical Drive, Image File, or Folder).  
+
+![Step B2](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_61f840f9.jpg?raw=true)
+
+**Step 3:** Pick the drive you wish to capture and click **Finish**.  
+
+![Step B3](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_56ce71b2.jpg?raw=true)
+
+**Step 4:** In the next window, press **Add** to choose an image format.  
+
+![Step B4](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.58_0a038f70.jpg?raw=true)
+
+**Step 5:** Select the image type (Raw / SMART / E01 / AFF).  
+> Recommendation: **E01** is commonly preferred.  
+
+![Step B5](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_56ce71b2.jpg?raw=true)
+
+**Step 6:** Provide case details (Case ID, Evidence ID, Examiner, Description, Notes), then click **Next**.  
+
+![Step B6](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.58_0a038f70.jpg?raw=true)
+
+**Step 7:** Choose a storage path and set a filename for the image.  
+
+![Step B7](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.57_a329330e.jpg?raw=true)
+
+**Step 8:** Configure options (compression, split size, etc.), then press **Finish** and afterwards **Start**.  
+
+![Step B8](https://github.com/99230040236-byte/DF/blob/c0bfb139841542aacf47cd3a54b630f6464b46e1/exp1/WhatsApp%20Image%202025-09-01%20at%2022.47.58_ba2291db.jpg?raw=true)
+
+During imaging, FTK Imager calculates and verifies hash values. If acquisition is successful, the verification hashes will match, proving integrity of the evidence.  
+
+---
