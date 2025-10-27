@@ -26,7 +26,7 @@
 2.  **Install Java:** Ensure JRE is installed on your machine.
 3.  **Prepare environment:** Place the `StegExpose.jar` file in a dedicated working folder.
 
-![images/exp1-disk-step1.png](https://github.com/99230040236-byte/DF/blob/9bce79846599c7aef2455bc4ad4536bb44513b09/exp1/9.9.jpeg)
+![images/exp1-disk-step1.png](https://github.com/99230040236-byte/DF/blob/01a0082a0b21ee8f5269415343b72b04cd02d0bf/exp1/8.1.png)
 
 ### 2. Select Images for Analysis
 
